@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Club — Privacy Policy</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1d1d1f;
+            --muted: #6e6e73;
+            --border: #e5e5e7;
+            --accent: #0066cc;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #111111;
+                --text: #f5f5f7;
+                --muted: #a1a1a6;
+                --border: #2d2d2d;
+                --accent: #4da3ff;
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem 1.5rem;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.25rem;
+        }
+        .subtitle {
+            color: var(--muted);
+            font-size: 0.95rem;
+            margin-bottom: 2.5rem;
+        }
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+        p, li {
+            font-size: 1rem;
+            color: var(--text);
+            margin-bottom: 0.75rem;
+        }
+        ul {
+            padding-left: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+        li { margin-bottom: 0.35rem; }
+        .card {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin: 1.25rem 0;
+        }
+        .card-title {
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: var(--muted);
+            margin-bottom: 0.5rem;
+        }
+        .highlight {
+            color: var(--accent);
+            font-weight: 600;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.95rem;
+        }
+        th, td {
+            text-align: left;
+            padding: 0.6rem 0.75rem;
+            border-bottom: 1px solid var(--border);
+        }
+        th {
+            font-weight: 600;
+            color: var(--muted);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Flight Club for iOS &mdash; Effective 30 March 2026</p>
+
+    <div class="card">
+        <div class="card-title">The short version</div>
+        <p style="margin-bottom:0">
+            Flight Club stores <span class="highlight">all data locally on your device</span>.
+            Nothing is sent to our servers or any third party. We have no servers.
+            We collect no analytics, run no ads, and have no tracking of any kind.
+        </p>
+    </div>
+
+    <h2>What data the app uses</h2>
+    <p>Flight Club uses your device's sensors to record flight data. The following information is captured during a flight and stored on your device only:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Source</th>
+                <th>Purpose</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>GPS coordinates, altitude, speed, heading</td>
+                <td>Device GPS</td>
+                <td>Flight path recording and map display</td>
+            </tr>
+            <tr>
+                <td>Pitch, roll, acceleration</td>
+                <td>Device motion sensors</td>
+                <td>Aircraft attitude and G-force logging</td>
+            </tr>
+            <tr>
+                <td>Pilot name, co-pilot name</td>
+                <td>Manual entry</td>
+                <td>Flight record keeping</td>
+            </tr>
+            <tr>
+                <td>Aircraft registration, airports</td>
+                <td>Manual entry</td>
+                <td>Flight record keeping</td>
+            </tr>
+            <tr>
+                <td>Weather conditions</td>
+                <td>Manual entry</td>
+                <td>Pre-flight documentation</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Where data is stored</h2>
+    <p>All flight data is stored in a local database on your device. Data never leaves your device through the app. There is no cloud sync, no remote backup, and no server-side component.</p>
+    <p>If you delete the app, all flight data is permanently removed.</p>
+
+    <h2>Location services</h2>
+    <p>Flight Club requests access to your device's location to record your flight path using GPS. Location data is:</p>
+    <ul>
+        <li>Only collected while you are actively recording a flight</li>
+        <li>Stored locally on your device</li>
+        <li>Never transmitted to any external service</li>
+    </ul>
+    <p>You can deny location access at any time through your device's Settings. The app will not be able to record flight paths without it.</p>
+
+    <h2>Motion &amp; sensor data</h2>
+    <p>Flight Club uses your device's accelerometer, gyroscope, and magnetometer to record aircraft attitude (pitch and roll) and acceleration during flight. This sensor data is stored locally and never shared.</p>
+
+    <h2>Third-party services</h2>
+    <p>Flight Club uses <strong>no</strong> third-party services. There are no analytics SDKs, advertising frameworks, crash reporters, or external APIs.</p>
+
+    <h2>Data sharing</h2>
+    <p>We do not share, sell, or transfer any of your data to third parties. Since all data stays on your device and we have no access to it, sharing is not possible.</p>
+
+    <h2>Children's privacy</h2>
+    <p>Flight Club does not knowingly collect information from children under 13. The app does not require an account or collect any personal information beyond what the user manually enters for their own flight records.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If we update this privacy policy, the revised version will be posted at this URL with an updated effective date. Material changes that affect how your data is handled will be communicated through an app update.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about this privacy policy, contact us at:</p>
+    <p><a href="mailto:fc@lightbulbresearch.com">fc@lightbulbresearch.com</a></p>
+
+    <footer>
+        <p>&copy; 2026 Lightbulb Research. All rights reserved.</p>
+        <p>Flight Club is not affiliated with any aviation authority or regulatory body.</p>
+    </footer>
+
+</body>
+</html>
