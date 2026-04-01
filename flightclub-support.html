@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Club — Support</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1d1d1f;
+            --muted: #6e6e73;
+            --border: #e5e5e7;
+            --accent: #0066cc;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #111111;
+                --text: #f5f5f7;
+                --muted: #a1a1a6;
+                --border: #2d2d2d;
+                --accent: #4da3ff;
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem 1.5rem;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.25rem;
+        }
+        .subtitle {
+            color: var(--muted);
+            font-size: 0.95rem;
+            margin-bottom: 2.5rem;
+        }
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+        p, li {
+            font-size: 1rem;
+            color: var(--text);
+            margin-bottom: 0.75rem;
+        }
+        ul {
+            padding-left: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+        li { margin-bottom: 0.35rem; }
+        .card {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin: 1.25rem 0;
+        }
+        .card-title {
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: var(--muted);
+            margin-bottom: 0.5rem;
+        }
+        details {
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1rem 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+        details[open] { padding-bottom: 0.5rem; }
+        summary {
+            font-weight: 600;
+            cursor: pointer;
+            padding: 0.25rem 0;
+        }
+        summary::marker { color: var(--accent); }
+        details p {
+            margin-top: 0.75rem;
+            color: var(--muted);
+        }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Flight Club Support</h1>
+    <p class="subtitle">Flight data logger for iOS</p>
+
+    <div class="card">
+        <div class="card-title">Contact us</div>
+        <p style="margin-bottom:0.4rem">For questions, bug reports, or feature requests:</p>
+        <p style="margin-bottom:0"><a href="mailto:fc@lightbulbresearch.com">fc@lightbulbresearch.com</a></p>
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <details>
+        <summary>What permissions does Flight Club need?</summary>
+        <p><strong>Location</strong> is required to record your flight path via GPS. <strong>Motion &amp; Fitness</strong> is required to record aircraft attitude (pitch, roll) and acceleration. The app cannot record flights without these permissions. You can manage them in Settings &gt; Privacy &amp; Security.</p>
+    </details>
+
+    <details>
+        <summary>Why is there a 20-second countdown before recording?</summary>
+        <p>The countdown gives you time to position your device and prepare for departure. At the end of the countdown, the app calibrates the motion sensors to your aircraft's current orientation, so pitch and roll readings are relative to level flight.</p>
+    </details>
+
+    <details>
+        <summary>Why are the last 20 seconds of my flight removed?</summary>
+        <p>When you stop a flight, the app automatically discards the final 20 seconds of data. This removes the landing roll-out and the time it takes to reach for your device, keeping your flight statistics clean.</p>
+    </details>
+
+    <details>
+        <summary>Will the app drain my battery?</summary>
+        <p>Flight Club uses GPS and motion sensors continuously during recording, which does consume battery. You can reduce battery usage by choosing a longer data logging interval (e.g. 5 or 10 seconds) in the new flight form. A fully charged device will comfortably last several hours of recording.</p>
+    </details>
+
+    <details>
+        <summary>Where is my data stored?</summary>
+        <p>All flight data is stored locally on your device. Nothing is sent to any server or third party. If you delete the app, all flight data is permanently removed.</p>
+    </details>
+
+    <details>
+        <summary>What units does the app use?</summary>
+        <p>The app displays altitude in feet, speed in knots, and temperature in degrees Celsius — standard aviation units. All data is stored internally in metric and converted for display.</p>
+    </details>
+
+    <details>
+        <summary>Can I use the app without cellular signal?</summary>
+        <p>Yes. Flight Club works entirely offline. GPS does not require a cellular connection. However, an initial GPS fix may take longer without network assistance.</p>
+    </details>
+
+    <details>
+        <summary>The GPS signal shows few bars. What can I do?</summary>
+        <p>Place your device where it has a clear view of the sky — on the dashboard or in a mount near the windscreen works best. Avoid keeping it in a pocket or bag. GPS accuracy improves after a few minutes of use.</p>
+    </details>
+
+    <h2>System Requirements</h2>
+    <ul>
+        <li>iOS 26.0 or later</li>
+        <li>iPhone or iPad with GPS and motion sensors</li>
+    </ul>
+
+    <footer>
+        <p>&copy; 2026 Lightbulb Research. All rights reserved.</p>
+        <p style="margin-top:0.5rem"><a href="https://lightbulbresearch.com/flightclub-privacy.html">Privacy Policy</a></p>
+    </footer>
+
+</body>
+</html>
